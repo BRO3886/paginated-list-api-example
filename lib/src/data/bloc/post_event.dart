@@ -4,6 +4,7 @@ abstract class PostEvent extends Equatable {
   const PostEvent();
 }
 
+///Event to Fetch Posts
 class FetchPosts extends PostEvent {
   final int pageNumber;
   FetchPosts({@required this.pageNumber});

@@ -6,6 +6,9 @@ import 'package:paginated_list_app/src/data/models/posts.dart';
 import 'package:paginated_list_app/src/data/repositories/utils.dart';
 
 class PostsRepository {
+
+  ///[getPosts] is used to fetch posts by page number from
+  ///the API
   Future<ApiResponse<Posts>> getPosts(int pageNumber) async {
     print("getPosts called");
 
